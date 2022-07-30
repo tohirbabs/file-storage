@@ -1,0 +1,43 @@
+
+:root{
+    --edgesRightBorder: 1px solid rgba(255, 255, 255, 0.058);
+    --BodyBackgroundColor: #151515;
+    --secondBackgroundColor: rgb(15, 15, 15);
+    --positioning: 20px;
+    --fn : 'M PLUS Rounded 1c', sans-serif;
+    --darkthemcolor: white;
+
+
+    /* box one color */
+    --boxOneColor: rgb(8, 103, 8);
+
+}
+
+
+
+
+.moveArea{
+    padding-top:px;
+    padding-left:30px;
+}
+.overView{
+    width:93%;
+    height:250px;
+    background-color: var(--secondBackgroundColor);
+    border-radius:10px;
+    color: var(--darkthemcolor);
+    padding:10px;
+    line-height:10px;
+}
+
+.over_header .header_n{
+    font-size:24px;
+}
+.over_header span{
+    font-size:13px;
+    color:grey;
+}
+
+.charts{
+    padding-top:50px;
+}

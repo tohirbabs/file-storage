@@ -1,0 +1,201 @@
+:root{
+    --edgesRightBorder: 1px solid rgba(255, 255, 255, 0.058);
+    --BodyBackgroundColor: #000000;
+    --secondBkColor: rgb(8, 8, 8);
+    --positioning: 100px;
+    --fn : 'M PLUS Rounded 1c', sans-serif;
+    --darkthemcolor: white;
+
+
+    --rightContentBkColor: rgba(0, 0, 0, 0.946);
+}
+
+body{
+    font-family: var(--fn);
+    user-select:none;
+}
+
+.container_box{
+    position: fixed;top:0;right:0;left:0;bottom:0;
+    background-color: var(--BodyBackgroundColor);
+}
+
+
+/* this area is for the left layout holding the menus */
+.left_content{
+    position: fixed;top:0;left:0;bottom:0;
+    width:280px;
+    border-right: var(--edgesRightBorder);
+    background-color: rgb(8, 8, 8);
+    font-size:14px;
+}
+
+
+/* for moving object up or down */
+.positioning{
+    padding-top:var(--positioning);
+    border-bottom: var(--edgesRightBorder);
+    height:250px;
+}
+.bottom_nav_bar{
+    padding-top:130px;
+}
+
+.compnay_logo{
+    width:100%;
+    height:70px;
+    line-height:0;
+    border-bottom: var(--edgesRightBorder);
+}
+.logo{padding-left:36px;padding-top:3px;}
+.logo img{
+    width:220px;
+    padding-top:10px;
+}
+
+
+.positioning{
+    padding-top:50px;
+}
+.menu_one{
+    width:100%;
+    height:50px;
+    color:var(--darkthemcolor);
+    cursor: pointer;
+}
+.menu_one:hover{
+    display: block;
+    color:green;
+    animation:changeState 1s;
+}
+@keyframes changeState {
+    from{
+        opacity:0;
+        color:white;
+    }
+}
+.menu_icons{
+    float:left; padding-left:40px;
+    padding-top:10px;
+}
+.menu_name{
+    float:left;
+    padding-top:10px;
+    padding-left:20px;
+}
+.hover{
+    float:right;
+    padding-right:10px;
+    padding-top:8px;
+}
+.hover_shape{
+    width:7px;
+    height:30px;
+    background-color:green;
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* right content */
+.right_content{
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:270px;
+    background-color: var(--rightContentBkColor);
+    border-left: var(--edgesRightBorder);
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+
+/* configuring the scrollbar */
+::-webkit-scrollbar{
+    width:10px;
+    background-color: var(--secondBackgroundColor);
+}
+::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    background-color: var(--BodyBackgroundColor);
+}
+
+
+.header{
+    width:100%;
+    height:70px;
+    border-bottom:var(--edgesRightBorder);
+    line-height:5px;
+    color:var(--darkthemcolor);
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.567);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.left{
+    float: left;
+    padding-left:40px;
+    font-size:13px;
+    padding-top:10px;
+}
+.left p{color:var(--darkthemcolor);}
+
+
+.searchBar{
+    float:left;
+    padding-left:140px;
+    padding-top:15px;
+}
+.bar{
+    width:400px;
+    height:40px;
+    background-color: var(--secondBackgroundColor);
+    color:var(--darkthemcolor);
+    border-radius:10px;
+}
+.icon{
+    float:left;
+    padding-left:10px;
+    padding-top:12px;
+}
+.userInput{float:left; padding-left:9px; padding-top:8px;} 
+.userInput input{
+    padding:5px;width:330px;
+    background-color:transparent;
+    outline:none;
+    border:none;
+    color: var(--darkthemcolor);
+}

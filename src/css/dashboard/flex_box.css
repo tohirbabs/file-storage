@@ -1,0 +1,82 @@
+
+:root{
+    --edgesRightBorder: 1px solid rgba(255, 255, 255, 0.058);
+    --BodyBackgroundColor: #151515;
+    --secondBackgroundColor: rgb(15, 15, 15);
+    --positioning: 20px;
+    --fn : 'M PLUS Rounded 1c', sans-serif;
+    --darkthemcolor: white;
+
+
+    /* box one color */
+    --boxOneColor: rgb(8, 103, 8);
+
+}
+
+
+.row::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.row{
+    padding-top:100px;
+    padding-left:20px;
+}
+
+
+.column{
+    float: left;
+    margin:10px;
+    line-height:5px;
+}
+
+.box_one{
+    color:var(--darkthemcolor);
+    background-color: var(--boxOneColor);
+    width:300px;
+    height:140px;
+    border-radius:10px;
+    padding:10px;
+}
+
+.box_two{
+    color:var(--darkthemcolor);
+    background-color: var(--secondBackgroundColor);
+    width:300px;
+    height:140px;
+    border-radius:10px;
+    padding:10px;
+}
+
+.box_three{
+    color:var(--darkthemcolor);
+    background-color: var(--secondBackgroundColor);
+    width:300px;
+    height:140px;
+    border-radius:10px;
+    padding:10px;
+}
+
+
+
+
+
+
+.list_one{
+    padding-top:10px;
+}
+.divided{
+    width:100%;
+    height:2px;
+    /* background-color: rgba(175, 175, 175, 0.107); */
+    border:var(--edgesRightBorder);
+}
+.list_two{
+    font-size:13px;
+    padding-top:30px;
+}
+.last{
+    color:lightgray;
+}
