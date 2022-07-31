@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'nova-green': '#3cb043',
         'nova-black': '#242424',
+        'nova-grey': '#333333'
       }
     },
   },
