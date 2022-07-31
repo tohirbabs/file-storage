@@ -22,13 +22,30 @@ export const links = () => {
   ];
 };
 
+function BoxComponent({}) {
+  return (
+    <div className="column">
+      <div className="box_one">
+        <div className="list_one">
+          {" "}
+          <i className="fa-solid fa-circle-check"></i>
+        </div>
+        <div className="list_two">
+          <p>Drone Model used in last flight</p>
+          <h3>Nova One</h3>
+          <div className="divided"></div>
+          <p className="last">Last flight on july 11, 2022</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Dash() {
   return (
     //container_custom box holds every details about the dashboard
     <div className="container_box">
-      <ClientOnly>
-        {() => <SideNav />}
-      </ClientOnly>
+      <ClientOnly>{() => <SideNav />}</ClientOnly>
 
       <div className="right_content">
         {/* start of right_layout */}
@@ -53,6 +70,10 @@ export default function Dash() {
         {/* boxes */}
         {/* the css code is located in css/dashbaord/flex_box.css */}
         <div className="row">
+          <BoxComponent />
+          <BoxComponent />
+          <BoxComponent />
+
           <div className="column">
             <div className="box_one">
               <div className="list_one">
@@ -99,9 +120,7 @@ export default function Dash() {
         </div>
 
         {/* this area containes the chart codes */}
-        <ClientOnly>
-          {() => <Charts />}
-        </ClientOnly>
+        <ClientOnly>{() => <Charts />}</ClientOnly>
 
         {/* under the css properties of SeondToLast.css */}
         <div className="SeondToLast">
@@ -112,9 +131,7 @@ export default function Dash() {
               </center>
               <div className="row_list">
                 <div className="column_left">
-                  <ClientOnly>
-                    {() => <Pchart />}
-                  </ClientOnly>
+                  <ClientOnly>{() => <Pchart />}</ClientOnly>
                 </div>
               </div>
             </div>
