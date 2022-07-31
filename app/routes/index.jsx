@@ -24,17 +24,18 @@ export const links = () => {
 
 function BoxComponent({}) {
   return (
-    <div className="column">
-      <div className="box_one">
-        <div className="list_one">
-          {" "}
+    <div className="w-full flex flex-row align-middle content-center justify-center">
+      <div className="bg-nova-green text-white w-full h-full rounded-lg px-5 py-5">
+        <div className="mb-4">
           <i className="fa-solid fa-circle-check"></i>
         </div>
-        <div className="list_two">
-          <p>Drone Model used in last flight</p>
-          <h3>Nova One</h3>
-          <div className="divided"></div>
-          <p className="last">Last flight on july 11, 2022</p>
+        <div className="">
+          <p className="text-base 2xl:text-lg mb-1">
+            Drone Model used in last flight
+          </p>
+          <h3 className="text-2xl 2xl:text-3xl font-bold mb-2">Nova One</h3>
+          <hr className="mb-2" />
+          <p className="text-xs 2xl:text-sm">Last flight on july 11, 2022</p>
         </div>
       </div>
     </div>
@@ -47,9 +48,8 @@ export default function Dash() {
     <div className="container_box">
       <ClientOnly>{() => <SideNav />}</ClientOnly>
 
-      <div className="right_content">
+      <div className="right_content h-full relative flex flex-col">
         {/* start of right_layout */}
-
         <div className="header">
           <div className="left">
             <p>welcome to your dashboard</p>
@@ -67,115 +67,40 @@ export default function Dash() {
           </div>
         </div>
 
-        {/* boxes */}
-        {/* the css code is located in css/dashbaord/flex_box.css */}
-        <div className="row">
-          <BoxComponent />
-          <BoxComponent />
-          <BoxComponent />
+        <div className="flex flex-1 flex-col relative pt-[70px]">
+          <section className="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-5 content-center justify-between py-2 lg:py-3 px-4">
+            <BoxComponent />
+            <BoxComponent />
+            <BoxComponent />
+          </section>
 
-          <div className="column">
-            <div className="box_one">
-              <div className="list_one">
-                {" "}
-                <i className="fa-solid fa-circle-check"></i>
-              </div>
-              <div className="list_two">
-                <p>Drone Model used in last flight</p>
-                <h3>Nova One</h3>
-                <div className="divided"></div>
-                <p className="last">Last flight on july 11, 2022</p>
-              </div>
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-5 content-center justify-between px-4 mt-8">
+            <ClientOnly>{() => <h1 className="text-white">Hello</h1>}</ClientOnly>
+            <div className="text-white rounded-lg px-9 pt-5 h-full bg-nova-black">
+              <div className="text-center w-full text-2xl font-bold">Next Flight Details</div>
+              <ul role={"list"} className="divide-y divide-gray-100">
+                <li className="py-4 flex flex-col">
+                  <span className="text-base">Drone Model</span>
+                  <span className="font-bold">Nova One</span>
+                </li>
+                <li className="py-4 flex flex-col">
+                  <span className="text-base">Drone Model</span>
+                  <span className="font-bold">Nova One</span>
+                </li>
+                <li className= "py-4 flex flex-col">
+                  <span className="text-base">Drone Model</span>
+                  <span className="font-bold">Nova One</span>
+                </li>
+                <li className="py-4 flex flex-col">
+                  <span className="text-base">Drone Model</span>
+                  <span className="font-bold">Nova One</span>
+                </li>
+              </ul>
             </div>
-          </div>
-          <div className="column">
-            <div className="box_two">
-              <div className="list_one">
-                {" "}
-                <i className="fa-solid fa-circle-check"></i>
-              </div>
-              <div className="list_two">
-                <p>Activity carried out</p>
-                <h3>Field Management</h3>
-                <div className="divided"></div>
-                <p className="last">carried out on july 11, 2022</p>
-              </div>
-            </div>
-          </div>
+          </section>
 
-          <div className="column">
-            <div className="box_three">
-              <div className="list_one">
-                {" "}
-                <i className="fa-solid fa-circle-check"></i>
-              </div>
-              <div className="list_two">
-                <p>Distance travelied in last flight</p>
-                <h3>60km</h3>
-                <div className="divided"></div>
-                <p>Last inspected on july 11, 2022</p>
-              </div>
-            </div>
-          </div>
+          <section></section>
         </div>
-
-        {/* this area containes the chart codes */}
-        <ClientOnly>{() => <Charts />}</ClientOnly>
-
-        {/* under the css properties of SeondToLast.css */}
-        <div className="SeondToLast">
-          <div className="rows">
-            <div className="container_custom extends">
-              <center>
-                <h3>Last Flight Data</h3>
-              </center>
-              <div className="row_list">
-                <div className="column_left">
-                  <ClientOnly>{() => <Pchart />}</ClientOnly>
-                </div>
-              </div>
-            </div>
-            <div className="container_custom extend2">
-              <center>
-                <h3>Available Service</h3>
-              </center>
-              <div className="leftContent">
-                <div id="moveball">
-                  <div id="ball"></div>
-                </div>
-                <div className="text">
-                  <p>Field Management</p>
-                </div>
-              </div>
-              <div className="rightContent">
-                <div id="moveball">
-                  <div id="ball"></div>
-                </div>
-                <div className="text">
-                  <p>Security Inspection</p>
-                </div>
-              </div>
-              <div className="leftContent">
-                <div id="moveball">
-                  <div id="ball"></div>
-                </div>
-                <div className="text">
-                  <p>Weed Dispersion</p>
-                </div>
-              </div>
-              <div className="rightContent">
-                <div id="moveball">
-                  <div id="ball"></div>
-                </div>
-                <div className="text">
-                  <p>Real Estate Inspection</p>
-                </div>
-              </div>
-            </div>
-            {/* <div className="container_custom"></div> */}
-          </div>
-        </div>
-        {/* end of right layout */}
       </div>
     </div>
   );

@@ -4,7 +4,12 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'nova-green': '#3cb043',
+        'nova-black': '#242424',
+      }
+    },
   },
   plugins: [],
 }
