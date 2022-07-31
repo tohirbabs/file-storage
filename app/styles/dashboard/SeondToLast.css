@@ -29,7 +29,7 @@
     padding-left:20px;
 }
 
-.container{
+.container_custom{
     float:left;
     width:320px;
     height:220px;
@@ -38,6 +38,7 @@
     margin:10px;
     background-color:var(--secondBackgroundColor);
 }
+
 .extends{
     width:580px;
 }
