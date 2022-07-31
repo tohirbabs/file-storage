@@ -1,6 +1,6 @@
 export default function SideNav() {
   return (
-    <div className="left_content">
+    <div className="bg-nova-black h-full fixed w-[280px] xl:w-[300px] 2xl:w-[300px]">
       {/* starting of layout */}
       <div className="compnay_logo">
         <div className="logo">

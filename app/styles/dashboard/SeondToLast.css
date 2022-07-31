@@ -1,10 +1,9 @@
-
-:root{
+:root {
     --edgesRightBorder: 1px solid rgba(255, 255, 255, 0.058);
     --BodyBackgroundColor: #151515;
-    --secondBackgroundColor: rgb(15, 15, 15);
+    --secondBackgroundColor: #333333;
     --positioning: 20px;
-    --fn : 'M PLUS Rounded 1c', sans-serif;
+    --fn: 'M PLUS Rounded 1c', sans-serif;
     --darkthemcolor: white;
 
 
@@ -13,88 +12,89 @@
 
 }
 
-
-
-
-
-
-.rows::after{
+.rows::after {
     clear: both;
-    display:table;
+    display: table;
     content: "";
 }
 
-.rows{
-    padding-top:0px;
-    padding-left:20px;
+.rows {
+    padding-top: 0px;
+    padding-left: 20px;
 }
 
-.container_custom{
-    float:left;
-    width:320px;
-    height:220px;
-    border-radius:10px;
+.container_custom {
+    float: left;
+    width: 320px;
+    height: 220px;
+    border-radius: 10px;
     color: var(--darkthemcolor);
-    margin:10px;
-    background-color:var(--secondBackgroundColor);
+    margin: 10px;
+    background-color: var(--secondBackgroundColor);
 }
 
-.extends{
-    width:580px;
+.extends {
+    width: 580px;
 }
 
-.extend2{
-    width:400px;
-    height:140px;
+.extend2 {
+    width: 400px;
+    height: 140px;
 }
 
 
 
 /* this area is for the graph listing */
-.row_list::after{
+.row_list::after {
     clear: both;
-    display:table;
+    display: table;
     content: "";
 }
 
-.column_left{
-    float:left;
-    margin:10px;
+.column_left {
+    float: left;
+    margin: 10px;
 }
 
 
-
-
-
-
-
-.leftContent{
-    float:left;
-    padding-left:10px;
-    width:160px;
-    line-height:0;
-    font-size:14px;
+.leftContent {
+    float: left;
+    padding-left: 10px;
+    width: 160px;
+    line-height: 0;
+    font-size: 14px;
 }
 
-.rightContent{
-    float:right;
-    padding-right:25px;
-    width:179px;
-    line-height:0;
-    font-size:14px;
+.rightContent {
+    float: right;
+    width: 179px;
+    line-height: 0;
+    font-size: 14px;
 }
-#ball{
-    width:15px;
-    height:15px;
+
+#ball {
+    width: 15px;
+    height: 15px;
     background-color: var(--boxOneColor);
-    border-radius:10px;
-}
-#moveball{
-    float: left;
-    padding-top:8px;
+    border-radius: 10px;
 }
 
-.text{
+#moveball {
     float: left;
-    padding-left:10px;
+    padding-top: 8px;
+}
+
+.text {
+    float: left;
+    padding-left: 10px;
+}
+
+.header_custom {
+    width: calc(100vw - 280px);
+}
+
+@media screen and (min-width: 1280px) {
+    .header_custom {
+        width: calc(100vw - 300px);
+    }
 }

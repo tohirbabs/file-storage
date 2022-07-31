@@ -57,7 +57,7 @@ export default function App() {
         <script src="gsap.js"></script>
         <Links />
       </head>
-      <body>
+      <body style={{ backgroundColor: "#333333" }}>
         <Outlet />
         <ScrollRestoration />
         <Scripts />

@@ -1,6 +1,6 @@
 export default function LeftContent() {
   return (
-    <div className="left_content">
+    <div className="lg:w-200px pl-2">
       {/* starting of layout */}
       <div className="compnay_logo">
         <div className="logo">
