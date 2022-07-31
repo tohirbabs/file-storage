@@ -1,10 +1,10 @@
 import { ClientOnly } from "remix-utils";
 
 // css linking
-import layout_positioning from "../css/dashboard/layout_positioning.css";
-import flex_box from "../css/dashboard/flex_box.css";
-import overView from "../css/dashboard/overView.css";
-import SeondToLast from "../css/dashboard/SeondToLast.css";
+import layout_positioning from "../styles/dashboard/layout_positioning.css";
+import flex_box from "../styles/dashboard/flex_box.css";
+import overView from "../styles/dashboard/overView.css";
+import SeondToLast from "../styles/dashboard/SeondToLast.css";
 
 // images
 
@@ -24,7 +24,7 @@ export const links = () => {
 
 export default function Dash() {
   return (
-    //container box holds every details about the dashboard
+    //container_custom box holds every details about the dashboard
     <div className="container_box">
       <ClientOnly>
         {() => <SideNav />}
@@ -41,7 +41,7 @@ export default function Dash() {
           <div className="searchBar">
             <div className="bar">
               <div className="icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-magnifying-glass"></i>
               </div>
               <div className="userInput">
                 <input placeholder="Search Dashboard"></input>
@@ -57,7 +57,7 @@ export default function Dash() {
             <div className="box_one">
               <div className="list_one">
                 {" "}
-                <i class="fa-solid fa-circle-check"></i>
+                <i className="fa-solid fa-circle-check"></i>
               </div>
               <div className="list_two">
                 <p>Drone Model used in last flight</p>
@@ -71,7 +71,7 @@ export default function Dash() {
             <div className="box_two">
               <div className="list_one">
                 {" "}
-                <i class="fa-solid fa-circle-check"></i>
+                <i className="fa-solid fa-circle-check"></i>
               </div>
               <div className="list_two">
                 <p>Activity carried out</p>
@@ -86,7 +86,7 @@ export default function Dash() {
             <div className="box_three">
               <div className="list_one">
                 {" "}
-                <i class="fa-solid fa-circle-check"></i>
+                <i className="fa-solid fa-circle-check"></i>
               </div>
               <div className="list_two">
                 <p>Distance travelied in last flight</p>
@@ -106,7 +106,7 @@ export default function Dash() {
         {/* under the css properties of SeondToLast.css */}
         <div className="SeondToLast">
           <div className="rows">
-            <div className="container extends">
+            <div className="container_custom extends">
               <center>
                 <h3>Last Flight Data</h3>
               </center>
@@ -118,8 +118,7 @@ export default function Dash() {
                 </div>
               </div>
             </div>
-
-            <div className="container extend2">
+            <div className="container_custom extend2">
               <center>
                 <h3>Available Service</h3>
               </center>
@@ -156,11 +155,9 @@ export default function Dash() {
                 </div>
               </div>
             </div>
-
-            {/* <div className="container"></div> */}
+            {/* <div className="container_custom"></div> */}
           </div>
         </div>
-
         {/* end of right layout */}
       </div>
     </div>
