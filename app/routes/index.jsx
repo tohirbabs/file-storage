@@ -9,9 +9,9 @@ import SeondToLast from "../styles/dashboard/SeondToLast.css";
 // images
 
 // includes (now moved to `app/utils/client` folder)
-import SideNav from "../utils/client/SideNav";
-import Charts from "../utils/client/chart.client";
-import Pchart from "../utils/client/barChart.client";
+import SideNav from "../utils/components/SideNav";
+import Charts from "../utils/components/chart.client";
+import Pchart from "../utils/components/barChart.client";
 
 export const links = () => {
   return [
