@@ -15,7 +15,7 @@ export default function SideNav() {
             onMouseLeave={window["mouseLeave"]}
           >
             <div className="menu_icons">
-              <i class="fa-solid fa-chart-line"></i>
+              <i className="fa-solid fa-chart-line"></i>
             </div>
             <div className="menu_name">Dashboard</div>
             <div className="hover">
@@ -30,7 +30,7 @@ export default function SideNav() {
             onMouseLeave={window["mouseLeave1"]}
           >
             <div className="menu_icons">
-              <i class="fa-solid fa-server"></i>
+              <i className="fa-solid fa-server"></i>
             </div>
             <div className="menu_name">File Storage</div>
             <div className="hover">
@@ -45,7 +45,7 @@ export default function SideNav() {
             onMouseLeave={window["mouseLeave2"]}
           >
             <div className="menu_icons">
-              <i class="fa-solid fa-user"></i>
+              <i className="fa-solid fa-user"></i>
             </div>
             <div className="menu_name">Profile</div>
             <div className="hover">
@@ -60,7 +60,7 @@ export default function SideNav() {
             onMouseLeave={window["mouseLeave3"]}
           >
             <div className="menu_icons">
-              <i class="fa-solid fa-gear"></i>
+              <i className="fa-solid fa-gear"></i>
             </div>
             <div className="menu_name">Settings</div>
             <div className="hover">
@@ -74,7 +74,7 @@ export default function SideNav() {
         <form action="">
           <div className="menu_one">
             <div className="menu_icons">
-              <i class="fa-solid fa-circle-info"></i>
+              <i className="fa-solid fa-circle-info"></i>
             </div>
             <div className="menu_name">Help</div>
             <div className="hover">
@@ -85,7 +85,7 @@ export default function SideNav() {
         <form action="">
           <div className="menu_one">
             <div className="menu_icons">
-              <i class="fa-solid fa-right-from-bracket"></i>
+              <i className="fa-solid fa-right-from-bracket"></i>
             </div>
             <div className="menu_name">Logout</div>
             <div className="hover">
