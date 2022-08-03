@@ -2,9 +2,13 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "remix build",
+    "build": "npm-run-all -p build:*",
+    "build:remix": "remix build",
+    "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
     "deploy": "fly deploy --remote-only",
-    "dev": "remix dev",
+    "dev": "npm-run-all -p dev:*",
+    "dev:remix": "remix dev",
+    "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
     "start": "remix-serve build"
   },
   "dependencies": {
@@ -20,7 +24,11 @@
   "devDependencies": {
     "@remix-run/dev": "^1.6.7",
     "@remix-run/eslint-config": "^1.6.7",
-    "eslint": "^8.20.0"
+    "autoprefixer": "^10.4.8",
+    "eslint": "^8.20.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.7"
   },
   "engines": {
     "node": ">=14"

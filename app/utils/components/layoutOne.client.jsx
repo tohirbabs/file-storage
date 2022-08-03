@@ -1,10 +1,10 @@
-export default function SideNav() {
+export default function LeftContent() {
   return (
-    <div className="left_content">
+    <div className="lg:w-200px pl-2">
       {/* starting of layout */}
       <div className="compnay_logo">
         <div className="logo">
-          <img src="/images/logo.png"/>
+          <img src="/images/logo.png" />
         </div>
       </div>
       <div className="positioning">
@@ -17,7 +17,7 @@ export default function SideNav() {
             <div className="menu_icons">
               <i class="fa-solid fa-chart-line"></i>
             </div>
-            <div className="menu_name">Dashboard</div>
+            <div className="menu_name">Analysis</div>
             <div className="hover">
               <div className="hover_shape" id="hover1"></div>
             </div>
@@ -32,7 +32,7 @@ export default function SideNav() {
             <div className="menu_icons">
               <i class="fa-solid fa-server"></i>
             </div>
-            <div className="menu_name">Media Data</div>
+            <div className="menu_name">File Storage</div>
             <div className="hover">
               <div className="hover_shape" id="hover2"></div>
             </div>

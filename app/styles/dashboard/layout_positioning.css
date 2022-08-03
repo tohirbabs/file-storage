@@ -1,6 +1,6 @@
 :root{
     --edgesRightBorder: 1px solid rgba(255, 255, 255, 0.058);
-    --BodyBackgroundColor: #000000;
+    --BodyBackgroundColor: #333333;
     --secondBkColor: rgb(8, 8, 8);
     --positioning: 100px;
     --fn : 'M PLUS Rounded 1c', sans-serif;
@@ -26,7 +26,7 @@ body{
     position: fixed;top:0;left:0;bottom:0;
     width:280px;
     border-right: var(--edgesRightBorder);
-    background-color: rgb(8, 8, 8);
+    background-color: #242424;
     font-size:14px;
 }
 
