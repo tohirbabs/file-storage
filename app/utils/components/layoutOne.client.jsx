@@ -17,7 +17,7 @@ export default function LeftContent() {
             <div className="menu_icons">
               <i class="fa-solid fa-chart-line"></i>
             </div>
-            <div className="menu_name">Dashboard</div>
+            <div className="menu_name">Analysis</div>
             <div className="hover">
               <div className="hover_shape" id="hover1"></div>
             </div>
@@ -32,7 +32,7 @@ export default function LeftContent() {
             <div className="menu_icons">
               <i class="fa-solid fa-server"></i>
             </div>
-            <div className="menu_name">Media Data</div>
+            <div className="menu_name">File Storage</div>
             <div className="hover">
               <div className="hover_shape" id="hover2"></div>
             </div>
