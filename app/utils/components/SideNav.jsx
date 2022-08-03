@@ -17,7 +17,7 @@ export default function SideNav() {
             <div className="menu_icons">
               <i className="fa-solid fa-chart-line"></i>
             </div>
-            <div className="menu_name">Dashboard</div>
+            <div className="menu_name">Analysis</div>
             <div className="hover">
               <div className="hover_shape" id="hover1"></div>
             </div>
