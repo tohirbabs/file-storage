@@ -48,7 +48,7 @@ export default function Dash() {
 
   return (
     //container_custom box holds every details about the dashboard
-    <div className="h-full flex bg-nova-grey w-full flex-col ml-[280px] xl:ml-[300px]">
+    <div className="h-full flex bg-nova-grey w-full flex-col sm:ml-[280px] xl:ml-[300px]">
       {/* Header */}
       <Header
         subText={"Welcome to your dashboard"}

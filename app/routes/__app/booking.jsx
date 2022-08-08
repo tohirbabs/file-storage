@@ -7,7 +7,7 @@ export default function Booking() {
   };
 
   return (
-    <div className="h-full flex bg-nova-grey w-full flex-col ml-[280px] xl:ml-[300px]">
+    <div className="h-full flex bg-nova-grey w-full flex-col sm:ml-[280px] xl:ml-[300px]">
       {/* Page Main Header */}
       <Header
         mainText={"Booking"}
@@ -17,9 +17,9 @@ export default function Booking() {
       />
 
       {/* The main page area */}
-      <div className="bg-nova-grey flex flex-1 flex-col max-w-7xl px-10 lg:px-12 xl:px-14 mx-auto w-full relative mt-[70px] pt-3">
+      <div className="bg-nova-grey flex flex-1 flex-col max-w-7xl sm:px-10 px-2 lg:px-12 xl:px-14 mx-auto w-full relative mt-[70px] pt-3">
         {/* The inner form */}
-        <section className="text-white bg-nova-black w-full rounded-lg py-14 px-16 xl:rounded-xl">
+        <section className="text-white bg-nova-black w-full rounded-lg py-14 sm:px-10 px-4 xl:rounded-xl">
           <h2 className="text-xl lg:text-2xl font-bold mb-9">
             Book an appointment with us today
           </h2>

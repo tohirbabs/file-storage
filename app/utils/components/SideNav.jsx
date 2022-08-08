@@ -1,10 +1,10 @@
 export default function SideNav() {
   return (
-    <div className="bg-nova-black h-full fixed w-[280px] xl:w-[300px] 2xl:w-[300px]">
+    <div className="bg-nova-black h-full fixed w-[280px] xl:w-[300px] 2xl:w-[300px] hidden sm:block">
       {/* starting of layout */}
       <div className="compnay_logo">
         <div className="logo">
-          <img src="/images/logo.png"/>
+          <img src="/images/logo.png" />
         </div>
       </div>
       <div className="positioning">
