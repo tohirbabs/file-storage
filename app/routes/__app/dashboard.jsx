@@ -43,14 +43,19 @@ function BoxComponent({}) {
 export default function Dash() {
   const user = {
     name: "John Doe",
-    avatar: "https://i.pravatar.cc/200"
-  }
+    avatar: "https://i.pravatar.cc/200",
+  };
 
   return (
     //container_custom box holds every details about the dashboard
     <div className="h-full flex bg-nova-grey w-full flex-col ml-[280px] xl:ml-[300px]">
       {/* Header */}
-      <Header subText={"Welcome to your dashboard"} mainText={user.name} placeHolder={"Search Dashboard"} user={user}/>
+      <Header
+        subText={"Welcome to your dashboard"}
+        mainText={user.name}
+        placeHolder={"Search Dashboard"}
+        user={user}
+      />
       <div className="flex flex-1 flex-col relative mt-[70px] pt-3 bg-nova-grey">
         <section className="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-5 content-center justify-between py-2 lg:py-3 px-4">
           <BoxComponent />
