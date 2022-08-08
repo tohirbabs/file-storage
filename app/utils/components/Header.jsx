@@ -50,7 +50,7 @@ export default function Header({ subText, mainText, placeHolder, user }) {
       <div className="col-span-2 sm:col-span-1 flex flex-row content-center justify-center  col-start-3 sm:col-start-4">
         <Menu as="div" className="relative inline-block text-left">
           <div>
-            <Menu.Button className="inline-flex justify-center items-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
+            <Menu.Button className="inline-flex justify-center items-center w-full rounded-md border border-gray-300 shadow-sm p-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
               <span className="sr-only">Open user menu</span>
               <img
                 className="mr-2 w-8 h-8 rounded-full"

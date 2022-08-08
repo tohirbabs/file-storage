@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 export default function SideNav() {
   return (
     <div className="bg-nova-black h-full fixed w-[280px] xl:w-[300px] 2xl:w-[300px] hidden sm:block">
@@ -9,34 +10,38 @@ export default function SideNav() {
       </div>
       <div className="positioning">
         <form action="">
-          <div
-            className="menu_one"
-            onMouseOver={window["mouseOver1"]}
-            onMouseLeave={window["mouseLeave"]}
-          >
-            <div className="menu_icons">
-              <i className="fa-solid fa-chart-line"></i>
+          <Link to="/dashboard">
+            <div
+              className="menu_one"
+              onMouseOver={window["mouseOver1"]}
+              onMouseLeave={window["mouseLeave"]}
+            >
+              <div className="menu_icons">
+                <i className="fa-solid fa-chart-line"></i>
+              </div>
+              <div className="menu_name">Analysis</div>
+              <div className="hover">
+                <div className="hover_shape" id="hover1"></div>
+              </div>
             </div>
-            <div className="menu_name">Analysis</div>
-            <div className="hover">
-              <div className="hover_shape" id="hover1"></div>
-            </div>
-          </div>
+          </Link>
         </form>
         <form action="">
-          <div
-            className="menu_one"
-            onMouseOver={window["mouseOver2"]}
-            onMouseLeave={window["mouseLeave1"]}
-          >
-            <div className="menu_icons">
-              <i className="fa-solid fa-server"></i>
+          <Link to="/file-storage">
+            <div
+              className="menu_one"
+              onMouseOver={window["mouseOver2"]}
+              onMouseLeave={window["mouseLeave1"]}
+            >
+              <div className="menu_icons">
+                <i className="fa-solid fa-server"></i>
+              </div>
+              <div className="menu_name">File Storage</div>
+              <div className="hover">
+                <div className="hover_shape" id="hover2"></div>
+              </div>
             </div>
-            <div className="menu_name">File Storage</div>
-            <div className="hover">
-              <div className="hover_shape" id="hover2"></div>
-            </div>
-          </div>
+          </Link>
         </form>
         <form action="">
           <div
