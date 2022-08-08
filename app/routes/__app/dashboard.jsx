@@ -42,7 +42,7 @@ function BoxComponent({}) {
 
 export default function Dash() {
   const user = {
-    name: "John Doe",
+    name: "Max Mufu",
     avatar: "https://i.pravatar.cc/200",
   };
 

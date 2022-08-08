@@ -2,6 +2,7 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
+import { Link } from "@remix-run/react";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -79,38 +80,42 @@ export default function Header({ subText, mainText, placeHolder, user }) {
               <div className="py-1">
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="#"
-                      className={classNames(
-                        active
-                          ? "bg-gray-100 text-gray-900 flex items-center"
-                          : "text-gray-700 flex items-center",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
-                      <div className="pr-2">
-                        <i className="fa-solid fa-chart-line"></i>
-                      </div>
-                      <div className="">Analysis</div>
-                    </a>
+                    <Link to="/dashboard">
+                      <a
+                        href="#"
+                        className={classNames(
+                          active
+                            ? "bg-gray-100 text-gray-900 flex items-center"
+                            : "text-gray-700 flex items-center",
+                          "block px-4 py-2 text-sm"
+                        )}
+                      >
+                        <div className="pr-2">
+                          <i className="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div className="">Analysis</div>
+                      </a>
+                    </Link>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="#"
-                      className={classNames(
-                        active
-                          ? "bg-gray-100 text-gray-900 flex items-center"
-                          : "text-gray-700 flex items-center",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
-                      <div className="pr-2">
-                        <i className="fa-solid fa-server"></i>
-                      </div>
-                      <div className="">File Storage</div>
-                    </a>
+                    <Link to="/file-storage">
+                      <a
+                        href="#"
+                        className={classNames(
+                          active
+                            ? "bg-gray-100 text-gray-900 flex items-center"
+                            : "text-gray-700 flex items-center",
+                          "block px-4 py-2 text-sm"
+                        )}
+                      >
+                        <div className="pr-2">
+                          <i className="fa-solid fa-server"></i>
+                        </div>
+                        <div className="">File Storage</div>
+                      </a>
+                    </Link>
                   )}
                 </Menu.Item>
               </div>
